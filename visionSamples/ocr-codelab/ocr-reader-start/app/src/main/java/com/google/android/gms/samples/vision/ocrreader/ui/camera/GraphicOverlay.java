@@ -86,7 +86,7 @@ public class GraphicOverlay<T extends GraphicOverlay.Graphic> extends View {
         public abstract boolean contains(float x, float y);
 
         /**
-         * Adjusts a horizontal value of the supplied value from the preview scale to the view
+         * Adjusts a horizontal value of the supplied value from the preview scale to the view.
          * scale.
          */
         public float scaleX(float horizontal) {

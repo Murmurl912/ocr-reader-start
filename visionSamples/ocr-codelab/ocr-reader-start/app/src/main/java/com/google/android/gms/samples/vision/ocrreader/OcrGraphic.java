@@ -82,7 +82,6 @@ public class OcrGraphic extends GraphicOverlay.Graphic {
      */
     public boolean contains(float x, float y) {
         // TODO: Check if this graphic's text contains this point.
-        // TODO: Check if this graphic's text contains this point.
         if (text == null) {
             return false;
         }

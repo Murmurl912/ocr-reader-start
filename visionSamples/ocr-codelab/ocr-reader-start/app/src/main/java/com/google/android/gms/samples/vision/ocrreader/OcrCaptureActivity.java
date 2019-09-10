@@ -183,7 +183,7 @@ public final class OcrCaptureActivity extends AppCompatActivity {
 
         // TODO: Create the TextRecognizer
         TextRecognizer textRecognizer = new TextRecognizer.Builder(context).build();
-
+        TextRecognizer t = new TextRecognizer.Builder(context).build();
         // TODO: Set the TextRecognizer's Processor.
         textRecognizer.setProcessor(new OcrDetectorProcessor(graphicOverlay));
 
@@ -205,8 +205,8 @@ public final class OcrCaptureActivity extends AppCompatActivity {
         cameraSource =
                 new CameraSource.Builder(getApplicationContext(), textRecognizer)
                         .setFacing(CameraSource.CAMERA_FACING_BACK)
-                        .setRequestedPreviewSize(1280, 1024)
-                        .setRequestedFps(15.0f)
+                        .setRequestedPreviewSize(1024, 1024)
+                        .setRequestedFps(30.0f)
                         .setFlashMode(useFlash ? Camera.Parameters.FLASH_MODE_TORCH : null)
                         .setFocusMode(autoFocus ? Camera.Parameters.FOCUS_MODE_CONTINUOUS_VIDEO : null)
                         .build();

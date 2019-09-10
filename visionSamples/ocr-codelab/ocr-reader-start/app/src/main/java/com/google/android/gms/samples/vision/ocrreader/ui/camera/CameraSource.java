@@ -100,6 +100,7 @@ public class CameraSource {
             Camera.Parameters.FOCUS_MODE_INFINITY,
             Camera.Parameters.FOCUS_MODE_MACRO
     })
+
     @Retention(RetentionPolicy.SOURCE)
     private @interface FocusMode {}
 
